@@ -15,7 +15,6 @@
 #import "ESPUDPSocketServer.h"
 #import "ESP_NetUtil.h"
 #import "ESPTouchTaskParameter.h"
-#import <UIKit/UIKit.h>
 
 #define ONE_DATA_LEN    3
 
@@ -69,7 +68,7 @@
         perror("ESPTouchTask initWithApSsid() apSsid shouldn't be null or empty");
     }
     // the apSsid should be null or empty
-    assert(apSsid!=nil&&![apSsid isEqualToString:@""]);
+//    assert(apSsid!=nil&&![apSsid isEqualToString:@""]);
     if (apPwd == nil)
     {
         apPwd = @"";
